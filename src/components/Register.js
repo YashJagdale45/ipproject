@@ -31,14 +31,6 @@ export default function Register() {
             alert("Email must be filled out");
             return false;
         }
-
-        else{store();
-            alert("Registration Successfully")
-            window.location.href = '/login';
-        }
-
-    }
-    function passwordCheck() {
         let psw = document.forms["myForm"]["psw"].value;
         if (psw.length < 8) {
             alert("Password must be at least 8 characters");
@@ -50,6 +42,13 @@ export default function Register() {
             return false
 
         }
+        else{store();
+            alert("Registration Successfully")
+            window.location.href = '/login';
+        }
+
+     
+        
     }
     return (
         <div className='register' method="post" >

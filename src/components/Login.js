@@ -19,7 +19,7 @@ export default function Login() {
     if(userName.value !== storedName || userPw.value !== storedPw) {
         alert('Enter Password or Email! Please Try Again!');
     }else {
-        alert('You are loged in.');
+        alert('You are logged in.');
         window.location.href = '/';
     }
 }
